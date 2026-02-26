@@ -1,198 +1,196 @@
 # 11_Development-of-AI-Driven-Code-Reviewer
-# Deployment Link : 
+# Deployment Link : https://code-mind-reviewer--rahulsecret2004.replit.app
 # Project Demo Video :
 
-**Overview**
-Reviewing code manually for correctness, coding style, and optimization is time-consuming, especially in academic or training environments where students submit large volumes of assignments. This project aims to build an AI-powered tool that automatically reviews student code submissions. The system will check for syntax errors, logical issues, coding style adherence, and suggest optimizations.
-By combining AI models (GPT API) with Abstract Syntax Tree (AST) parsing, the solution will provide detailed feedback to help students improve their coding practices.
+🧠 AI-Driven Code Review System
 
-📌 Project Overview
+An intelligent full-stack web application that automates the code review process using static analysis and Artificial Intelligence.
 
-The AI-Driven Code Review System is designed to assist developers by automating the code review process.Reviewing code manually for correctness, coding style, and optimization is time-consuming, especially in academic or training environments where students submit large volumes of assignments. Instead of relying solely on manual reviews, this platform provides:
+📌 Overview
 
- Instant code analysis
+The AI-Driven Code Review System helps developers improve code quality by providing automated feedback, detecting issues, and generating structured quality scores.
 
- Intelligent error detection
+Instead of relying completely on manual reviews, this platform delivers instant AI-powered analysis and maintains review history for performance tracking.
 
- Code quality scoring
+🎯 Objectives
 
- Optimization suggestions
+<img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/581c2e55-2dbb-4845-ae07-468ccfe70a8c" />
+Automate the initial stage of code review
 
- Review history tracking
+Detect syntax and structural issues
 
-The system is built using React (Frontend) and Flask (Backend) with AI-powered analysis.
+Provide AI-based improvement suggestions
 
- 📌 System Architecture
- 
-React Frontend  →  Flask REST API  →  AI Analysis Engine  →  Database
+Generate a rule-based quality score
 
-🔹 Frontend
+Maintain review history through a dashboard
 
-React.js
+Demonstrate scalable full-stack architecture
 
-Embedded code editor
+🏗 System Architecture
 
-Dashboard for review tracking
+The application follows a modular layered architecture:
 
-🔹 Backend
+⚛ Frontend Layer – React.js user interface
 
-Python
+⚡ Backend Layer – Flask REST API
 
-Flask REST API
+🤖 Analysis Layer – Python AST + AI Engine
 
-AST-based static analysis
+🗄 Data Layer – PostgreSQL / NeonDB
 
-AI-based semantic evaluation
+🔄 Data Flow
 
-🔹 Database
+User submits code from the frontend
 
-PostgreSQL / NeonDB
+Flask API receives and validates the request
 
-Stores user data, submissions, scores, and feedback
+AST parser analyzes syntax and structure
 
- 📌 Key Features  
+AI engine evaluates semantics and best practices
 
- Instant Code Analysis
+Quality score and suggestions are generated
 
-Users can submit code and receive immediate feedback.
+Results are stored in the database
 
-🧠 Intelligent Error Detection
+Feedback is displayed on the dashboard
 
-Syntax errors
+🚀 Core Features
+🔍 Code Analysis
 
-Logical mistakes
+Syntax validation
 
-Style violations
+Structural analysis using Python AST
+
+Complexity detection
+
+Rule-based scoring
+
+🤖 AI Feedback
+
+Semantic-level suggestions
+
+Readability improvements
 
 Best practice recommendations
 
-📊 Quality Score Generation
+📊 Quality Scoring
 
-Each submission is assigned a structured quality score based on:
+Weighted deduction model
 
-Code structure
+Severity-based issue classification
 
-Complexity
+Final structured score generation
 
-Readability
+📁 Dashboard
 
-Optimization level
+Submission history
 
-📁 Review Dashboard
+Performance tracking
 
-Tracks previous submissions
+Stored feedback reports
 
-Displays performance trends
+🛠 Technology Stack
+Frontend
 
-Stores feedback history
+⚛ React.js
 
-📌 Workflow
+Axios for API communication
 
-User submits code via frontend.
+Backend
 
-Backend API receives the request.
+🐍 Python
 
-AST parser analyzes code structure.
+Flask
 
-AI module evaluates semantics and quality.
+REST API architecture
 
-Issues and score are generated.
+Python AST module
 
-Results are stored in the database.
+Database
 
-Feedback is displayed on dashboard.
+🗄 PostgreSQL / NeonDB
 
-📌 Installation & Setup
+AI Integration
 
-🔹 Clone the Repository
+🤖 OpenAI API (or similar NLP-based model)
 
+Deployment
+
+☁ Cloud hosting (AWS EC2 / Render / similar platforms)
+
+📦 Installation & Setup
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/ai-code-reviewer.git
 cd ai-code-reviewer
-
-🔹 Backend Setup (Flask)
+2️⃣ Backend Setup
 cd backend
 pip install -r requirements.txt
 python app.py
 
-Backend runs on:
-
+Backend runs at:
 http://localhost:5000
 
-🔹 Frontend Setup (React)
+3️⃣ Frontend Setup
 cd frontend
 npm install
 npm start
 
-Frontend runs on:
-
+Frontend runs at:
 http://localhost:3000
 
 🔐 Security Considerations
 
-Input validation
+Static analysis only (no execution of user-submitted code)
 
-No execution of user-submitted code (static analysis only)
+Input validation implemented
 
-Environment variable protection for API keys
+API key protection using environment variables
 
-Secure database connection
+Secure database connection handling
+
+Optional token-based authentication
 
 📈 Scalability
 
-The system follows a modular architecture and can be scaled by:
+Modular architecture design
 
-Deploying multiple backend instances
+Horizontal scaling support
 
-Using cloud-based load balancing
+Database indexing for faster queries
 
-Optimizing database indexing
+Optimized API response handling
 
-📌 Limitations
+🚧 Limitations
 
-Currently optimized for Python code
+Primarily optimized for Python
 
-AI suggestions may require human validation
+AI suggestions require human validation
 
-Does not replace human code reviewers (acts as assistant)
+Does not fully replace human reviewers
 
-📌 Future Enhancements
+🔮 Future Enhancements
 
 Multi-language support
 
-GitHub integration
+GitHub repository integration
 
-CI/CD pipeline integration
+CI/CD pipeline automation
 
-Deep learning–based semantic analysis
+AI model fine-tuning
 
-Team collaboration features
+Team-based collaborative reviews
 
-👨‍💻 Tech Stack
-
-Frontend: React.js
-
-Backend: Flask (Python)
-
-Database: PostgreSQL / NeonDB
-
-AI Integration: OpenAI API / NLP-based analysis
-
-Static Analysis: Python AST
-
-📌 Learning Outcomes
-
-Through this project, we gained experience in:
+🎓 Learning Outcomes
 
 REST API development
 
-AI integration in web systems
+Full-stack system integration
+
+AI integration in web applications
 
 Database schema design
 
-Frontend-backend integration
+Secure deployment practices
 
-System scalability and security practices
-
-📌 Conclusion
-
-This project demonstrates how AI can be integrated into a structured enterprise-ready architecture to automate and enhance the code review process, improving development efficiency and software quality.
+Scalable software architecture
