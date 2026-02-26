@@ -1,196 +1,151 @@
 # 11_Development-of-AI-Driven-Code-Reviewer
-# Deployment Link : https://code-mind-reviewer--rahulsecret2004.replit.app
+# Deployment Link 
+Link : https://code-mind-reviewer--rahulsecret2004.replit.app
 # Project Demo Video :
 
-🧠 AI-Driven Code Review System
+🚀 AI-Driven Code Review System
 
-An intelligent full-stack web application that automates the code review process using static analysis and Artificial Intelligence.
+An intelligent web-based platform that performs automated code reviews using AI.
+The system analyzes submitted code, detects errors, evaluates quality, and provides optimization suggestions in real time.
 
-📌 Overview
+📌 Project Overview
 
-The AI-Driven Code Review System helps developers improve code quality by providing automated feedback, detecting issues, and generating structured quality scores.
+The AI-Driven Code Review System is designed to assist developers by automating the code review process. Instead of relying solely on manual reviews, this platform provides:
 
-Instead of relying completely on manual reviews, this platform delivers instant AI-powered analysis and maintains review history for performance tracking.
+✅ Instant code analysis
+✅ Intelligent error detection
+✅ Code quality scoring
+✅ Optimization suggestions
+✅ Review history tracking
 
-🎯 Objectives
+The system is built using React (Frontend) and Flask (Backend) with AI-powered analysis.
 
-<img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/581c2e55-2dbb-4845-ae07-468ccfe70a8c" />
-Automate the initial stage of code review
+🏗️ System Architecture
 
-Detect syntax and structural issues
+React Frontend  →  Flask REST API  →  AI Analysis Engine  →  Database
 
-Provide AI-based improvement suggestions
+🔹 Frontend
 
-Generate a rule-based quality score
+React.js
+Embedded code editor
+Dashboard for review tracking
 
-Maintain review history through a dashboard
+🔹 Backend
 
-Demonstrate scalable full-stack architecture
+Python
+Flask REST API
+AST-based static analysis
+AI-based semantic evaluation
 
-🏗 System Architecture
+🔹 Database
 
-The application follows a modular layered architecture:
+PostgreSQL / NeonDB
+Stores user data, submissions, scores, and feedback
 
-⚛ Frontend Layer – React.js user interface
+⚙️ Key Features
 
-⚡ Backend Layer – Flask REST API
+⚡ Instant Code Analysis
 
-🤖 Analysis Layer – Python AST + AI Engine
+Users can submit code and receive immediate feedback.
 
-🗄 Data Layer – PostgreSQL / NeonDB
+🧠 Intelligent Error Detection
 
-🔄 Data Flow
-
-User submits code from the frontend
-
-Flask API receives and validates the request
-
-AST parser analyzes syntax and structure
-
-AI engine evaluates semantics and best practices
-
-Quality score and suggestions are generated
-
-Results are stored in the database
-
-Feedback is displayed on the dashboard
-
-🚀 Core Features
-🔍 Code Analysis
-
-Syntax validation
-
-Structural analysis using Python AST
-
-Complexity detection
-
-Rule-based scoring
-
-🤖 AI Feedback
-
-Semantic-level suggestions
-
-Readability improvements
-
+Syntax errors
+Logical mistakes
+Style violations
 Best practice recommendations
 
-📊 Quality Scoring
+📊 Quality Score Generation
 
-Weighted deduction model
+Each submission is assigned a structured quality score based on:
+Code structure
+Complexity
+Readability
+Optimization level
 
-Severity-based issue classification
+📁 Review Dashboard
 
-Final structured score generation
+Tracks previous submissions
+Displays performance trends
+Stores feedback history
 
-📁 Dashboard
+🔄 Workflow
 
-Submission history
+1. User submits code via frontend.
+2. Backend API receives the request.
+3. AST parser analyzes code structure.
+4. AI module evaluates semantics and quality.
+5. Issues and score are generated.
+6. Results are stored in the database.
+7. Feedback is displayed on dashboard.
 
-Performance tracking
+🛠️ Installation & Setup
 
-Stored feedback reports
-
-🛠 Technology Stack
-Frontend
-
-⚛ React.js
-
-Axios for API communication
-
-Backend
-
-🐍 Python
-
-Flask
-
-REST API architecture
-
-Python AST module
-
-Database
-
-🗄 PostgreSQL / NeonDB
-
-AI Integration
-
-🤖 OpenAI API (or similar NLP-based model)
-
-Deployment
-
-☁ Cloud hosting (AWS EC2 / Render / similar platforms)
-
-📦 Installation & Setup
-1️⃣ Clone the Repository
+🔹 Clone the Repository
 git clone https://github.com/your-username/ai-code-reviewer.git
 cd ai-code-reviewer
-2️⃣ Backend Setup
+
+🔹 Backend Setup (Flask)
 cd backend
 pip install -r requirements.txt
 python app.py
 
-Backend runs at:
+Backend runs on:
 http://localhost:5000
 
-3️⃣ Frontend Setup
+🔹 Frontend Setup (React)
 cd frontend
 npm install
 npm start
 
-Frontend runs at:
+Frontend runs on:
 http://localhost:3000
 
 🔐 Security Considerations
 
-Static analysis only (no execution of user-submitted code)
-
-Input validation implemented
-
-API key protection using environment variables
-
-Secure database connection handling
-
-Optional token-based authentication
+Input validation
+No execution of user-submitted code (static analysis only)
+Environment variable protection for API keys
+Secure database connection
 
 📈 Scalability
 
-Modular architecture design
-
-Horizontal scaling support
-
-Database indexing for faster queries
-
-Optimized API response handling
+The system follows a modular architecture and can be scaled by:
+Deploying multiple backend instances
+Using cloud-based load balancing
+Optimizing database indexing
 
 🚧 Limitations
 
-Primarily optimized for Python
-
-AI suggestions require human validation
-
-Does not fully replace human reviewers
+Currently optimized for Python code
+AI suggestions may require human validation
+Does not replace human code reviewers (acts as assistant)
 
 🔮 Future Enhancements
 
 Multi-language support
+GitHub integration
+CI/CD pipeline integration
+Deep learning–based semantic analysis
+Team collaboration features
 
-GitHub repository integration
+👨‍💻 Tech Stack
 
-CI/CD pipeline automation
+Frontend: React.js
+Backend: Flask (Python)
+Database: PostgreSQL / NeonDB
+AI Integration: OpenAI API / NLP-based analysis
+Static Analysis: Python AST
 
-AI model fine-tuning
+📚 Learning Outcomes
 
-Team-based collaborative reviews
-
-🎓 Learning Outcomes
-
+Through this project, we gained experience in:
 REST API development
-
-Full-stack system integration
-
-AI integration in web applications
-
+AI integration in web systems
 Database schema design
+Frontend-backend integration
+System scalability and security practices
 
-Secure deployment practices
+📌 Conclusion
 
-Scalable software architecture
+This project demonstrates how AI can be integrated into a structured enterprise-ready architecture to automate and enhance the code review process, improving development efficiency and software quality.
