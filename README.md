@@ -22,7 +22,7 @@ The AI-Driven Code Review System is designed to assist developers by automating 
 
 The system is built using React (Frontend) and Flask (Backend) with AI-powered analysis.
 
- System Architecture
+ 📌 System Architecture
  
 React Frontend  →  Flask REST API  →  AI Analysis Engine  →  Database
 
@@ -50,7 +50,7 @@ PostgreSQL / NeonDB
 
 Stores user data, submissions, scores, and feedback
 
-⚙️ Key Features
+ 📌 Key Features  
 
  Instant Code Analysis
 
@@ -86,7 +86,7 @@ Displays performance trends
 
 Stores feedback history
 
-🔄 Workflow
+📌 Workflow
 
 User submits code via frontend.
 
@@ -102,7 +102,7 @@ Results are stored in the database.
 
 Feedback is displayed on dashboard.
 
-🛠️ Installation & Setup
+📌 Installation & Setup
 
 🔹 Clone the Repository
 
@@ -126,6 +126,7 @@ npm start
 Frontend runs on:
 
 http://localhost:3000
+
 🔐 Security Considerations
 
 Input validation
@@ -146,7 +147,7 @@ Using cloud-based load balancing
 
 Optimizing database indexing
 
-🚧 Limitations
+📌 Limitations
 
 Currently optimized for Python code
 
@@ -154,7 +155,7 @@ AI suggestions may require human validation
 
 Does not replace human code reviewers (acts as assistant)
 
-🔮 Future Enhancements
+📌 Future Enhancements
 
 Multi-language support
 
@@ -178,7 +179,7 @@ AI Integration: OpenAI API / NLP-based analysis
 
 Static Analysis: Python AST
 
-📚 Learning Outcomes
+📌 Learning Outcomes
 
 Through this project, we gained experience in:
 
