@@ -4,7 +4,7 @@ Link : https://code-mind-reviewer--rahulsecret2004.replit.app
 # Project Demo Video :
 
  Video Link: https://github.com/user-attachments/assets/be95bbac-c9e8-4b04-b708-66bc03d24d59
- AI-code-reviwer_demonstration_video.mp4
+
 
 🚀 AI-Driven Code Review System
 
